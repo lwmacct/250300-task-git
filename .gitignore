@@ -1,13 +1,13 @@
+# 指定目标
 .local/*
-Dockerfile
+.taskfile/.env
 
-# 文件
-**/.env
+# 后缀类型
 **/*.log
 **/.DS_Store
 
 # 临时目录
 **/tmp/**
-**/logs/**
 **/temp/**
+**/logs/**
 **/cache/**
