@@ -72,5 +72,6 @@ tasks:
     cmds:
       - |
         _path_keys=".taskfile/git/keys"
+        chmod 600 ${_path_keys}/id_ed25519
         git config push.autoSetupRemote true
         git config core.sshCommand "ssh -i ${_path_keys}/id_ed25519 -o StrictHostKeyChecking=no -F /dev/null"
