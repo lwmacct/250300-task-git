@@ -39,8 +39,8 @@ tasks:
     cmds:
       - |
         git add .
-        git commit -m "- {{.CLI_ARGS}}" || true
-        git push origin main || true
+        git commit -m " - {{.CLI_ARGS}}" || true
+        git push || true
 
   tag:next:
     desc: "创建 tag"
